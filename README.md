@@ -1,7 +1,7 @@
 # <i>B for Blog</i>
 <i>B for Blog</i> is a blogging site that aims for an efficient exchange of ideas. Apart from making people's blogs available for reading, it would include features for creating, editing and deleting blog(s) from the user's own account. B for blog is an open ended blogging site where you can blog about anything and everything you like. The finished look of the website is shown for sample below.
 
-<img src="https://res.cloudinary.com/dfywflgbx/image/upload/v1633089630/img_zu4ufr.jpg" height="100%" width="100%"><br><br>
+<img src="https://res.cloudinary.com/dfywflgbx/image/upload/v1633089630/img_zu4ufr.jpg" height="75%" width="50%"><br><br>
 
 This project is a sincere attempt by MSTC, DA-IICT to encourage Open Source contribution. Make the best out of the ongoing Hacktoberfest 2021 by contributing to for-the-community projects. This project participates in Hacktoberest 2021 and all successful PRs made here will be counted among the at least 4 successful pull requests that you'd need to make in order to be eligible for the Hacktoberfest appreciation (plant a tree / get a tee).
 

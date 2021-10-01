@@ -1,4 +1,4 @@
-# B for Blog
+# <i>B for Blog</i>
 <i>B for Blog</i> is a blogging site that aims for an efficient exchange of ideas. Apart from making people's blogs available for reading, it would include features for creating, editing and deleting blog(s) from the user's own account.
 
 This project is a sincere attempt by MSTC, DA-IICT to encourage Open Source contribution. Make the best out of the ongoing Hacktoberfest 2021 by contributing to for-the-community projects. This project participates in Hacktoberest 2021 and all successful PRs made here will be counted among the at least 4 successful pull requests that you'd need to make in order to be eligible for the Hacktoberfest appreciation (plant a tree / get a tee).
@@ -18,8 +18,9 @@ Fork this project, clone it and start working!
 <br><br><br>
 
 ## Contributing
-Contributions are most welcome!
-See `contributing.md` for details.
+Contributions are most welcome!<br>
+Just comment `I'd like to work on this issue.` on the issue which you wish to work on. You'll be assigned that issue by a maintainer. Then you may make a Pull Request. PRs without a linked issue won't be considered. If you have a possible edit in mind, feel free to open an issue. Once approved, you may make a PR for it.<br>
+See `contributing.md` for more details.
 <br><br><br>
   
 ## 🛠 Skills

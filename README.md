@@ -1,7 +1,6 @@
 
 # Project Title
-
-A brief description of what this project is. A brief description of what this project is. A brief description of what this project is. A brief description of what this project is. A brief description of what this project is. A brief description of what this project is. A brief description of what this project is. A brief description of what this project is. A brief description of what this project is. A brief description of what this project is.
+<i>B for Blog</i> is a blogging site that aims for an efficient exchange of ideas. Apart from making people's blogs available for reading, it would include features for creating, editing and deleting blog(s) from the user's own account.
 
 This project is a sincere attempt by MSTC, DA-IICT to encourage Open Source contribution. Make the best out of the ongoing Hacktoberfest 2021 by contributing to for-the-community projects. This project participates in Hacktoberest 2021 and all successful PRs made here will be counted among the at least 4 successful pull requests that you'd need to make in order to be eligible for the Hacktoberfest appreciation (plant a tree / get a tee).
 
@@ -11,13 +10,13 @@ This project is a sincere attempt by MSTC, DA-IICT to encourage Open Source cont
 
 ## Getting started
 
-Install __________ with pip/npm
+Install Django with pip
 
 ```bash
-  npm install this
-  pip install that
-  cd my-project
+  py -m pip install --upgrade pip
+  pip install django
 ```
+Fork this project, clone it and start working!
 <br><br>
 
 ## Contributing

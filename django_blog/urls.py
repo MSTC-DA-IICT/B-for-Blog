@@ -19,9 +19,10 @@ from django.contrib import admin
 
 urlpatterns = [
     path('', views.index, name="index"),
-    path('index', views.index, name="index"),
-    path('login', views.login, name='login'),
-    path('create_blog', views.create_blog, name='create_blog'),
-    path('read_blog', views.read_blog, name='read_blog'),
+    path('index/', views.index, name="index"),
+    path('login/', views.login, name='login'),
+    path('logout/', views.logout, name='logout'),
+    path('create_blog/', views.create_blog, name='create_blog'),
+    path('read_blog/', views.read_blog, name='read_blog'),
     path('admin/', admin.site.urls),
 ]

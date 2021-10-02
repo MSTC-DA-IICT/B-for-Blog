@@ -8,6 +8,9 @@ def index(request):
 def login(request):
     return render(request, 'login.html')
 
+def logout(request):
+    return render(request, 'logout.html')
+
 def create_blog(request):
     return render(request, 'create_blog.html')
 

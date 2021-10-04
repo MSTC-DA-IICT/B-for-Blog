@@ -16,6 +16,7 @@ Including another URLconf
 from django.urls import path
 from blog import views
 from django.contrib import admin
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 urlpatterns = [
     path('', views.index, name="index"),
@@ -25,3 +26,5 @@ urlpatterns = [
     path('read_blog', views.read_blog, name='read_blog'),
     path('admin/', admin.site.urls),
 ]
+
+urlpatterns += staticfiles_urlpatterns()

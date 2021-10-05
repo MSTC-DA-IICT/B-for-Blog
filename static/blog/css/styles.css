@@ -1,0 +1,29 @@
+body
+{
+  margin: 0;
+}
+.container{
+  clear:both;
+  overflow:auto;
+  background-color: #D7E9F7
+
+}
+
+nav{float:right;}
+
+.logo img{float:left;
+  padding: 10px;
+
+}
+
+ul li{
+  display: inline-block;
+  padding:10px;
+  font-size:20px;
+   font-family:Times New Roman;
+}
+
+ul li:hover{
+  color:purple;
+
+}

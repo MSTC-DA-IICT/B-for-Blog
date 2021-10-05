@@ -1,17 +1,32 @@
 {% load static %}
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
     <title>B for Blog</title>
+    <link rel="stylesheet" href="{% static 'blog/css/styles.css' %}">
+
+    <link rel="icon" href="{% static 'blog/images/favicon.ico' %}">
 </head>
 <body>
-    <center>
-        <h1>Congratulations!</h1>
-        <h2>You've landed on the <i>B for Blog</i> home page.</h2>
-    </center>
+    <div class="container">
+        <div class="logo">
+            <img src="{% static 'blog/images/BFB_logo.png' %}" alt="" width="140px">
+        </div>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Download</li>
+                <li>Gallery</li>
+                <li>Sample Page</li>
+                <li>View Pro</li>
+            </ul>
+        </nav>
+    </div>
+
+    <img src="{% static 'blog/images/cover.jpg' %}" width="100%" alt="">
+
 </body>
+
 </html>

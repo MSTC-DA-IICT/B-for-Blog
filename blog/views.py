@@ -13,3 +13,6 @@ def create_blog(request):
 
 def read_blog(request):
     return render(request, 'read_blog.html')
+
+def registration(request):
+    return render(request, 'registration.html')

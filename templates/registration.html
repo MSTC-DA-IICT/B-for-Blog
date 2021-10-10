@@ -8,14 +8,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration</title>
 
+    <link rel="stylesheet" href="/static/blog/css/login.css" />
     <link rel="icon" href="{% static 'blog/images/favicon.ico' %}">
 
 </head>
 <body>
 
-    <h1>
-        Welcome to registration page!!!.
-    </h1>
+    <div class="center">
+        <h1 style="text-align: center; color: white">Register</h1>
+        <br>
+        <form action="" method="post">
+            {% csrf_token %}
+            <div class = "inputs">
+
+                <input type="text" id="first_name" name="First Name" placeholder="First Name">
+            <br />
+            <br />
+            <input type="text" name="Last Name" placeholder="Last Name" />
+            <br />
+            <br />
+            <input type="email" name="email" placeholder="E-mail" required/>
+            <br />
+            <br />
+            <input type="password" name="password" placeholder="Password" required/>
+        
+
+            </div>
+
+            <br>
+            <br>
+            <button class="sub_btn" type="submit" name="Login">Login</button>
+        </form>
+
+        <div class="register">
+            <p>
+                Already have an account?
+
+                <a href="{% url 'login' %}">login here</a>
+
+            </p>
+        </div>
+    </div>
 
 </body>
 </html>

@@ -1,14 +1,30 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from django.contrib import messages
-from django.contrib.auth.models import User
+from django.contrib.auth.models import User, auth
 from django.contrib.auth import login, authenticate, logout
 
 def index(request):
     return render(request, 'index.html')
 
 def login(request):
-    return render(request, 'login.html')
+
+    if request.method == 'POST':
+
+        email = request.POST['email']
+        password = request.POST['password']
+
+        user = auth.authenticate(email=email, password=password)
+
+        if user is None: # User does not exist.
+            messages.info(request, "Account does not exist. Click on Register here.")
+            return render(request, 'login.html')
+        else:   # User exists
+            auth.login(request, user)
+            return render(request, 'index.html')
+
+    else:
+        return render(request, 'login.html')
 
 def create_blog(request):
     return render(request, 'create_blog.html')

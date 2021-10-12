@@ -21,6 +21,7 @@
         {% for message in messages %}
             <p style="background: lightpink;border-radius: 5px;color: red; font-size: 17px;"> {{ message }} </p>
         {% endfor %}
+    
 
         <form action="{% url 'login' %}" method="post">
             {% csrf_token %}

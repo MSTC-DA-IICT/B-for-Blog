@@ -1,15 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create Blog</title>
-</head>
-<body>
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block head %}
+    <title>Write Blog</title>
+{% endblock %}
+
+{% block body %}
     <center>
-        <br>
-        <h2>Create a new blog here.</h2>
+        <h2>Write a new blog here.</h2>
     </center>
-</body>
-</html>
+{% endblock %}

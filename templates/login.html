@@ -1,53 +1,30 @@
+{% extends 'layout.html' %}
 {% load static %}
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% block head %}
     <title>Login</title>
-
     <link rel="stylesheet" href="/static/blog/css/login.css" />
-    <link rel="icon" href="{% static 'blog/images/favicon.ico' %}">
+{% endblock %}
 
-</head>
-<body>
-
+{% block body %}
     <div class="center">
-        <h1 style="text-align: center; color: white">Login</h1>
-        <br>
-
+        <h1 style="text-align: center; color: white">Login</h1><br>
         {% for message in messages %}
             <p style="background: lightpink;border-radius: 5px;color: red; font-size: 17px;"> {{ message }} </p>
         {% endfor %}
-    
-
         <form action="{% url 'login' %}" method="post">
             {% csrf_token %}
             <div class = "inputs">
-
-                <input type="email" name = "email" placeholder="Email ID" required>
-                <br>
-                <br>
+                <input type="email" name = "email" placeholder="Email ID" required><br><br>
                 <input type="password" name = "password" placeholder="Password" required>
-
-            </div>
-
-            <br>
-            <br>
+            </div><br><br>
             <button class="sub_btn" type="submit" name="Login">Login</button>
         </form>
-
         <div class="register">
             <p>
                 Do not have an account?
-
                 <a href="{% url 'registration' %}">Register here</a>
-
             </p>
         </div>
     </div>
-
-</body>
-</html>
+{% endblock %}

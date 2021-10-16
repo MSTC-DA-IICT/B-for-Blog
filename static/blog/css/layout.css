@@ -1,0 +1,27 @@
+nav {
+    padding: 5px;
+    background-color: #d7e9f7;
+    width: 100%;
+    height: max-content;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.nav-ul {
+    float: right;
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+}
+
+.nav-li {
+    float: left;
+    margin: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+}

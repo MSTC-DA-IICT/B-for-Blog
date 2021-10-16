@@ -1,54 +1,29 @@
+{% extends 'layout.html' %}
 {% load static %}
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% block head %}
     <title>Registration</title>
-
     <link rel="stylesheet" href="/static/blog/css/registration.css" />
-    <link rel="icon" href="{% static 'blog/images/favicon.ico' %}">
+{% endblock %}
 
-</head>
-<body>
-
+{% block body %}
     <div class="center">
-        <h1 style="text-align: center; color: white">Register</h1>
-        <br>
+        <h1 style="text-align: center; color: white">Register</h1><br>
         <form action="" method="post">
             {% csrf_token %}
             <div class = "inputs">
-
-                <input type="text" id="first_name" name="First Name" placeholder="First Name">
-            <br />
-            <br />
-            <input type="text" name="Last Name" placeholder="Last Name" />
-            <br />
-            <br />
-            <input type="email" name="email" placeholder="E-mail" required/>
-            <br />
-            <br />
-            <input type="password" name="password" placeholder="Password" required/>
-        
-
-            </div>
-
-            <br>
-            <br>
+                <input type="text" id="first_name" name="First Name" placeholder="First Name"><br /><br />
+                <input type="text" name="Last Name" placeholder="Last Name" /><br /><br />
+                <input type="email" name="email" placeholder="E-mail" required/><br /><br />
+                <input type="password" name="password" placeholder="Password" required/>
+            </div><br><br>
             <button class="sub_btn" type="submit" name="Login">Login</button>
         </form>
-
         <div class="register">
             <p>
                 Already have an account?
-
                 <a href="{% url 'login' %}">login here</a>
-
             </p>
         </div>
     </div>
-
-</body>
-</html>
+{% endblock %}

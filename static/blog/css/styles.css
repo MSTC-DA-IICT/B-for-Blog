@@ -1,13 +1,25 @@
-body {
+* {
   margin: 0;
+  padding: 0;
 }
 
 .container {
   clear: both;
   overflow: auto;
-  background-color: #d7e9f7;
 }
 
 .logo img {
-  padding: 10px;
+  margin: 10px;
+  padding: 30px;
+}
+
+.card-deck {
+  height: auto;
+  width: 100%;
+  padding: 50px;
+}
+
+.card {
+  text-align: center;
+  padding: 50px;
 }

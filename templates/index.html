@@ -1,6 +1,11 @@
 {% extends 'layout.html' %} {% load static %} {% block body %}
 
-<div class="card-deck">
+<div">
+  <img src="{% static 'blog/images/blog-pexels.jpg' %}"alt="" class="image-top">
+</div>
+<br>
+
+<div class="card-deck justify-content-center">
   <div class="card rounded border-dark">
     <img class="card-img-top" src="{% static 'blog/images/blog-pexels.jpg' %}" alt="Card image cap"/>
     <div class="card-body">
@@ -26,7 +31,7 @@
       <button class="btn btn-primary">Read-more</button>
     </div>
   </div>
-  <div class="card">
+  <div class="card border-dark">
     <img
       class="card-img-top"
       src="{% static 'blog/images/blog-pexels.jpg' %}"

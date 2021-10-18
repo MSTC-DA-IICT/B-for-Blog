@@ -14,12 +14,19 @@
 }
 
 .card-deck {
-  height: auto;
-  width: 100%;
+  width: 75%;
   padding: 50px;
+  margin-left: 10%;
 }
 
 .card {
+  width: 50px;
   text-align: center;
   padding: 50px;
+}
+
+.image-top {
+  height: 100%;
+  width: 100%;
+  background-repeat: repeat;
 }

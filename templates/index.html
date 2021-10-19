@@ -1,19 +1,53 @@
-{% load static %}
+{% extends 'layout.html' %} {% load static %} {% block body %}
 
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-<head>
-    <meta charset="utf-8">
-    <title>B for Blog</title>
-    <link rel="stylesheet" href="{% static 'blog/css/styles.css' %}">
-    <link rel="icon" href="{% static 'blog/images/favicon.ico' %}">
-</head>
-<body>
-    <div class="container" style="text-align: center">
-        <div class="logo">
-            <img src="{% static 'blog/images/BFB_logo.png' %}" alt="" width="140px">
-        </div>
+<div">
+  <img src="{% static 'blog/images/blog-pexels.jpg' %}"alt="" class="image-top">
+</div>
+<br>
+
+<div class="card-deck justify-content-center">
+  <div class="card rounded border-dark">
+    <img class="card-img-top" src="{% static 'blog/images/blog-pexels.jpg' %}" alt="Card image cap"/>
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">
+        Write the description of your blog here.
+        Write the description of your blog here.
+        Write the description of your blog here.
+      </p>
+      <button class="btn btn-primary">Read-more</button>
     </div>
-</body>
+  </div>
+  <div class="card rounded border-dark">
+    <img class="card-img-top" src="{% static 'blog/images/blog-pexels.jpg' %}" alt="Card image cap"/>
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">
+        Write the description of your blog here.
+        Write the description of your blog here.
+        Write the description of your blog here.
+      </p>
 
-</html>
+      <button class="btn btn-primary">Read-more</button>
+    </div>
+  </div>
+  <div class="card border-dark">
+    <img
+      class="card-img-top"
+      src="{% static 'blog/images/blog-pexels.jpg' %}"
+      alt="Card image cap"
+    />
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">
+        Write the description of your blog here.
+        Write the description of your blog here.
+        Write the description of your blog here.
+      </p>
+
+      <button class="btn btn-primary">Read-more</button>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

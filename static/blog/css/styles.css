@@ -1,13 +1,32 @@
-body {
+* {
   margin: 0;
+  padding: 0;
 }
 
 .container {
   clear: both;
   overflow: auto;
-  background-color: #d7e9f7;
 }
 
 .logo img {
-  padding: 10px;
+  margin: 10px;
+  padding: 30px;
+}
+
+.card-deck {
+  width: 75%;
+  padding: 50px;
+  margin-left: 10%;
+}
+
+.card {
+  width: 50px;
+  text-align: center;
+  padding: 50px;
+}
+
+.image-top {
+  height: 100%;
+  width: 100%;
+  background-repeat: repeat;
 }
